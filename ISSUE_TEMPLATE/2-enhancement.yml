@@ -1,0 +1,62 @@
+name: "✨ Enhancement Request"
+description: "Suggest a new feature or an improvement to an existing one."
+title: "[Enhancement]: "
+labels: ["enhancement"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Thanks for helping us improve!
+        Please complete the sections below so we fully understand your idea.
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: "Summary"
+      description: "A concise description of the proposed enhancement."
+      placeholder: "It would be great if…"
+    validations:
+      required: true
+
+  - type: textarea
+    id: rationale
+    attributes:
+      label: "Problem / Opportunity"
+      description: "What pain point does this solve? Why is it valuable?"
+    validations:
+      required: false
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: "Proposed solution"
+      description: "Describe how you think this could be implemented."
+      placeholder: "I propose that we…"
+    validations:
+      required: false
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: "Acceptance criteria"
+      description: "How will we know the enhancement is complete?"
+      placeholder: |
+        * Given …
+        * When …
+        * Then …
+    validations:
+      required: false
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: "Priority"
+      options:
+        - Low
+        - Medium
+        - High
+      description: "How urgent/important is this request?"
+    validations:
+      required: true

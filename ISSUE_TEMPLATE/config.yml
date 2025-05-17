@@ -1,0 +1,9 @@
+blank_issues_enabled: true
+contact_links:
+  - name: 🔒 Sensitive request (private)
+    url: mailto:info@philanthropydatacommons.org?subject=PDC%20request&body=Please%20describe%20your%20request%20here.
+    about: >
+      Use this link if your question or report contains **sensitive or private
+      information** (e.g., personal data, credentials, undisclosed security
+      vulnerabilities). It will open an email to our team instead of creating
+      a public issue.

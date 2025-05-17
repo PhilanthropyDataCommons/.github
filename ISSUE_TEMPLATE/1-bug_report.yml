@@ -1,0 +1,56 @@
+name: "	🐛 Bug Report"
+description: "Something isn’t working as expected."
+title: "[Bug]: "
+labels: ["bug"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Thanks for reporting a bug!
+        Fill out the details below so we can reproduce and fix it.
+
+  - type: input
+    id: component
+    attributes:
+      label: "Component or URL"
+      description: "What part of the system is affected?"
+      placeholder: "/api/v1/login"
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: "Steps to reproduce"
+      description: "Please be as detailed as possible."
+      placeholder: |
+        1. Go to …
+        2. Click on …
+        3. Scroll down to …
+        4. See error
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: "Expected behavior"
+      description: "What should have happened?"
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: "Actual behavior"
+      description: "What actually happened? Include any error messages."
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: "Additional context & screenshots"
+      description: "Logs, stack traces, or screenshots that help explain the problem."
