@@ -1,0 +1,23 @@
+name: Add to project
+
+on:
+  workflow_call:
+
+jobs:
+  add-to-project:
+    runs-on: ubuntu-latest
+    permissions: {}
+    steps:
+      - name: Generate a pdc-bot token
+        id: token
+        uses: actions/create-github-app-token@v3.2.0
+        with:
+          app-id: ${{ vars.PDC_BOT_APP_ID }}
+          private-key: ${{ secrets.PDC_BOT_PRIVATE_KEY }}
+          owner: ${{ github.repository_owner }}
+
+      - name: Add the issue or pull request to the project
+        uses: actions/add-to-project@v2.0.0
+        with:
+          project-url: ${{ vars.ADD_TO_PROJECT_URL }}
+          github-token: ${{ steps.token.outputs.token }}

@@ -1,0 +1,6 @@
+{
+  "name": "Add to project",
+  "description": "Automatically add new issues in this repository to the org project board.",
+  "iconName": "octicon project",
+  "categories": ["Automation"]
+}
