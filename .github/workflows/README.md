@@ -63,6 +63,8 @@ on:
   issues:
     types: [opened, transferred, reopened]
 
+permissions: {}
+
 jobs:
   add-to-project:
     uses: PhilanthropyDataCommons/.github/.github/workflows/add-to-project.yml@v1
