@@ -14,7 +14,7 @@ jobs:
     steps:
       - name: Generate a pdc-bot token
         id: token
-        uses: actions/create-github-app-token@v3.2.0
+        uses: actions/create-github-app-token@v3.3.0
         with:
           client-id: ${{ vars.PDC_BOT_CLIENT_ID }}
           private-key: ${{ secrets.PDC_BOT_PRIVATE_KEY }}
